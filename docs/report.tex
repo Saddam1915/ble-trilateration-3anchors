@@ -1,0 +1,44 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{hyperref}
+\usepackage{amsmath,amssymb}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{enumitem}
+
+\definecolor{codegray}{rgb}{0.95,0.95,0.96}
+\definecolor{keywordcolor}{rgb}{0.25,0.35,0.75}
+\definecolor{commentcolor}{rgb}{0.0,0.5,0.0}
+
+\lstdefinestyle{custom}{
+    backgroundcolor=\color{codegray},
+    frame=single,
+    breaklines=true,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{keywordcolor}\bfseries,
+    commentstyle=\color{commentcolor}\itshape,
+    showstringspaces=false,
+    numbers=left,
+    numberstyle=\tiny,
+    tabsize=2,
+    captionpos=b
+}
+
+\title{Technical Report\\BLE Distance Estimation and 2D Positioning Using Three-Anchor Trilateration}
+\author{Experimental Development: PC + Mobile BLE Anchors}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This report describes the design and implementation of a complete system for estimating the 2D position of a BLE device using three anchors.
+\end{abstract}
+\tableofcontents
+\section{System Overview}
+Three anchors with known coordinates scan BLE and send RSSI to a central PC which performs trilateration.
+\end{document}
